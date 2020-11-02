@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-01 09:13:42 PM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA5OjAwOjU4IFBNOzQwNzc="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA5OjEzOjQyIFBNOzI7NDE4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Real" array="False" size=""/>
+            <declare name="n2" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="aux" type="Real" array="False" size=""/>
+            <declare name="nh" type="Real" array="False" size=""/>
+            <assign variable="aux" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;Insira o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Insira o segundo n&#250;mero:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <if expression="n1&gt;n2">
+                <then>
+                    <assign variable="nh" expression="n1"/>
+                </then>
+                <else>
+                    <assign variable="nh" expression="n2"/>
+                </else>
+            </if>
+            <while expression="aux &lt;&gt; 0">
+                <assign variable="aux" expression="(i*n1)%n2"/>
+                <if expression="aux=0">
+                    <then>
+                        <output expression="&quot;MMC entre &quot; &amp;n1&amp; &quot; e &quot;&amp;n2 &amp;&quot; &#233; igual a &quot;&amp; n1*i&amp;&quot;.&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

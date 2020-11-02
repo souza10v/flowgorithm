@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-01 11:39:07 AM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTEwLTMxOzA5OjUxOjE3IFBNOzQwODA="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzExOjM5OjA3IEFNOzE7NDE2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="H" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira N:&quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="H" expression="0"/>
+            <for variable="i" start="1" end="N+1" direction="inc" step="1">
+                <if expression="i % 2 = 0">
+                    <then>
+                        <assign variable="H" expression="H-1/N"/>
+                    </then>
+                    <else>
+                        <assign variable="H" expression="H+1/N"/>
+                    </else>
+                </if>
+                <if expression="N = 1">
+                    <then>
+                        <assign variable="H" expression="1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;O valor de H &#233;:&quot; &amp;H" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

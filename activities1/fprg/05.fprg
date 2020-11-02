@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-01 09:20:25 PM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTEwLTMxOzAxOjE3OjU0IFBNOzQwNzU="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA5OjIwOjI1IFBNOzI7NDE4Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <assign variable="num" expression="1"/>
+            <assign variable="average" expression="num"/>
+            <while expression="num&lt;=100">
+                <output expression="num" newline="True"/>
+                <assign variable="num" expression="num+1"/>
+                <assign variable="average" expression="(average+num)/2"/>
+                <output expression="average" newline="True"/>
+            </while>
+            <output expression="&quot;M&#233;dia &quot; &amp; average" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

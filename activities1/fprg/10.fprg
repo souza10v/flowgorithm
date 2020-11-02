@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-01 04:30:10 PM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzAzOjUwOjQzIFBNOzQwNzA="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA0OjMwOjEwIFBNOzI7NDE3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="cont" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira um n&#250;mero: &quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="cont" expression="0"/>
+            <for variable="i" start="1" end="num" direction="inc" step="1">
+                <if expression="num % i = 0">
+                    <then>
+                        <assign variable="cont" expression="cont+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="cont = 2">
+                <then>
+                    <output expression="&quot;N&#250;mero &quot; &amp;num&amp; &quot; &#233; primo.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;N&#250;mero n&#227;o &quot; &amp;num&amp; &quot; &#233; primo.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

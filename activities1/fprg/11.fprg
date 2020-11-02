@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-01 04:41:13 PM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA0OjMxOjE1IFBNOzQwNjk="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA0OjQxOjEzIFBNOzI7NDE3Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="popa" type="Integer" array="False" size=""/>
+            <declare name="popb" type="Integer" array="False" size=""/>
+            <declare name="ratea" type="Real" array="False" size=""/>
+            <declare name="rateb" type="Real" array="False" size=""/>
+            <declare name="conty" type="Integer" array="False" size=""/>
+            <assign variable="conty" expression="0"/>
+            <output expression="&quot;Insira a popula&#231;&#227;o A:&quot;" newline="True"/>
+            <input variable="popa"/>
+            <output expression="&quot;Insira a popula&#231;&#227;o B:&quot;" newline="True"/>
+            <input variable="popb"/>
+            <output expression="&quot;Para taxas de crescimento insira, para 3%, apenas 3.&quot;" newline="True"/>
+            <output expression="&quot;Insira a taxa de cresimento de A:&quot;" newline="True"/>
+            <input variable="ratea"/>
+            <output expression="&quot;Insira a taxa de cresimento de B:&quot;" newline="True"/>
+            <input variable="rateb"/>
+            <while expression="popa&lt;=popb">
+                <assign variable="popa" expression="popa*((ratea/100)+1)"/>
+                <assign variable="popb" expression="popb*((rateb/100)+1)"/>
+                <assign variable="conty" expression="conty+1"/>
+            </while>
+            <output expression="&quot;Foram nec&#233;ssarios &quot;&amp;conty&amp;&quot; anos. A popula&#231;&#227;o da cidade A &#233; &quot; &amp;popa&amp; &quot; habitantes e a popula&#231;&#227;o da cidade B &#233; &quot; &amp;popb&amp; &quot; habitantes.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

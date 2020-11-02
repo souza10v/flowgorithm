@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-31 02:17:38 PM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTEwLTMxOzAxOjQwOjIzIFBNOzQwNjc="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTEwLTMxOzAyOjE3OjM4IFBNOzI7NDE4Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="code" type="Real" array="True" size="6"/>
+            <declare name="ncars" type="Integer" array="True" size="6"/>
+            <declare name="nacidents" type="Integer" array="True" size="6"/>
+            <declare name="highn" type="Integer" array="False" size=""/>
+            <declare name="lown" type="Integer" array="False" size=""/>
+            <declare name="highname" type="Integer" array="False" size=""/>
+            <declare name="lowname" type="Integer" array="False" size=""/>
+            <declare name="averagecars" type="Real" array="False" size=""/>
+            <declare name="averagecitieslow" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="contaux" type="Integer" array="False" size=""/>
+            <assign variable="highn" expression="-10000000"/>
+            <assign variable="lown" expression="10000000"/>
+            <assign variable="highname" expression="0"/>
+            <assign variable="lowname" expression="0"/>
+            <assign variable="averagecars" expression="0"/>
+            <assign variable="averagecitieslow" expression="0"/>
+            <assign variable="contaux" expression="0"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;C&#243;digo cidade &quot; &amp; i" newline="True"/>
+                <input variable="code[i]"/>
+                <output expression="&quot;N&#250;mero de ve&#237;culos:&quot;" newline="True"/>
+                <input variable="ncars[i]"/>
+                <output expression="&quot;N&#250;mero de acidentes de tr&#226;nsito com v&#237;timas: &quot;" newline="True"/>
+                <input variable="nacidents[i]"/>
+            </for>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <if expression="nacidents[i]&lt;lown">
+                    <then>
+                        <assign variable="lown" expression="nacidents[i]"/>
+                        <assign variable="lowname" expression="code[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="nacidents[i]&gt;highn">
+                    <then>
+                        <assign variable="highn" expression="nacidents[i]"/>
+                        <assign variable="highname" expression="code[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="averagecars" expression="averagecars+ncars[i]"/>
+                <if expression="ncars[i]&lt;2000">
+                    <then>
+                        <assign variable="averagecitieslow" expression="averagecitieslow+nacidents[i]"/>
+                        <assign variable="contaux" expression="contaux+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="averagecars" expression="averagecars/5"/>
+            <assign variable="averagecitieslow" expression="averagecitieslow/contaux"/>
+            <output expression="&quot;A cidade &quot; &amp; lowname &amp; &quot; tem o menor n&#250;mero de acidentes: &quot; &amp; lown" newline="True"/>
+            <output expression="&quot;A cidade &quot; &amp; highname &amp; &quot; tem o menor n&#250;mero de acidentes: &quot; &amp; highn" newline="True"/>
+            <output expression="&quot;A m&#233;dia de carros nas 5 cidades &#233; &quot; &amp; averagecars" newline="True"/>
+            <output expression="&quot;A m&#233;dia de acidentes nas cidades com menos de 2000 habitantes &#233; &quot; &amp; averagecitieslow" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

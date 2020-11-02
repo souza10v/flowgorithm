@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-01 09:21:29 PM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTEwLTMxOzAxOjIyOjI1IFBNOzQwNjk="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA5OjIxOjI5IFBNOzI7NDE4Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Real" array="False" size=""/>
+            <declare name="n2" type="Real" array="False" size=""/>
+            <declare name="naux" type="Real" array="False" size=""/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="Nmax" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o primeiro n&#250;mero da s&#233;rie de Fetuccine:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Insira o segundo n&#250;mero da s&#233;rie de Fetuccine:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <input variable="Nmax"/>
+            <assign variable="N" expression="1"/>
+            <output expression="n1" newline="True"/>
+            <output expression="n2" newline="True"/>
+            <while expression="N&lt;=Nmax">
+                <if expression="N%2=1">
+                    <then>
+                        <assign variable="naux" expression="n1+n2"/>
+                        <assign variable="n1" expression="n2"/>
+                        <assign variable="n2" expression="naux"/>
+                    </then>
+                    <else>
+                        <assign variable="naux" expression="n2-n1"/>
+                        <assign variable="n1" expression="n2"/>
+                        <assign variable="n2" expression="naux"/>
+                    </else>
+                </if>
+                <assign variable="N" expression="N+1"/>
+                <output expression="naux" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

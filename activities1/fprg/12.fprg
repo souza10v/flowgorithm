@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-01 07:39:50 PM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA0OjQ3OjQ3IFBNOzQwODE="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA3OjM5OjUwIFBNOzM7NDE4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="sexo" type="String" array="False" size=""/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <declare name="weight" type="Real" array="False" size=""/>
+            <declare name="size" type="Real" array="False" size=""/>
+            <declare name="msizename" type="String" array="False" size=""/>
+            <declare name="msize" type="Integer" array="False" size=""/>
+            <assign variable="msize" expression="-10000"/>
+            <declare name="fweightname" type="String" array="False" size=""/>
+            <declare name="fweight" type="Real" array="False" size=""/>
+            <assign variable="fweight" expression="-10000"/>
+            <declare name="averageage" type="Real" array="False" size=""/>
+            <assign variable="averageage" expression="0"/>
+            <declare name="cont" type="Integer" array="False" size=""/>
+            <assign variable="cont" expression="0"/>
+            <output expression="&quot;Nome&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Sexo (M/F)&quot;" newline="True"/>
+            <input variable="sexo"/>
+            <output expression="&quot;Idade&quot;" newline="True"/>
+            <input variable="age"/>
+            <output expression="&quot;Peso&quot;" newline="True"/>
+            <input variable="weight"/>
+            <output expression="&quot;Altura&quot;" newline="True"/>
+            <input variable="size"/>
+            <if expression="sexo =&quot;M&quot;">
+                <then>
+                    <if expression="size&gt;msize">
+                        <then>
+                            <assign variable="msize" expression="size"/>
+                            <assign variable="msizename" expression="name"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="weight&gt;fweight">
+                        <then>
+                            <assign variable="fweight" expression="weight"/>
+                            <assign variable="fweightname" expression="name"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <assign variable="averageage" expression="averageage+age"/>
+            <assign variable="cont" expression="cont+1"/>
+            <while expression="name&lt;&gt;&quot;@&quot;">
+                <output expression="&quot;Nome&quot;" newline="True"/>
+                <input variable="name"/>
+                <if expression="name = &quot;@&quot;">
+                    <then>
+                        <breakpoint/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;Sexo&quot;" newline="True"/>
+                <input variable="sexo"/>
+                <output expression="&quot;Idade&quot;" newline="True"/>
+                <input variable="age"/>
+                <output expression="&quot;Peso&quot;" newline="True"/>
+                <input variable="weight"/>
+                <output expression="&quot;Altura&quot;" newline="True"/>
+                <input variable="size"/>
+                <if expression="sexo=&quot;M&quot;">
+                    <then>
+                        <if expression="size&gt;msize">
+                            <then>
+                                <assign variable="msize" expression="size"/>
+                                <assign variable="msizename" expression="name"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="weight&gt;fweight">
+                            <then>
+                                <assign variable="fweight" expression="weight"/>
+                                <assign variable="fweightname" expression="name"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="averageage" expression="averageage+age"/>
+                <assign variable="cont" expression="cont+1"/>
+            </while>
+            <assign variable="averageage" expression="averageage/cont"/>
+            <output expression="&quot;O atleta&quot;&amp;msizename&amp;&quot;do sexo masculino mais alto tem&quot;&amp;msize&amp;&quot;.&quot;" newline="True"/>
+            <output expression="&quot;A atleta&quot;&amp;fweightname&amp;&quot; do sexo feminino mais pesada tem &quot;&amp;fweight&amp;&quot;.&quot;" newline="True"/>
+            <output expression="&quot;A m&#233;dia de idade dos atletas &#233; &quot;&amp; averageage&amp; &quot;anos.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
