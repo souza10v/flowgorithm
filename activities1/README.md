@@ -36,15 +36,26 @@
 </ul>
   
 
-<p>5 -Criar um algoritmo que imprima todos os números de 1 até 100, inclusive, e a média aritmética de todos eles.    </p>
+<p>5 - Criar um algoritmo que imprima todos os números de 1 até 100, inclusive, e a média aritmética de todos eles.    </p>
 
-<p>    </p>
+<p>6 - A série de Fetuccine é gerada da seguinte forma: os dois primeiros termos são fornecidos pelo usuário; a partir daí, os termos são gerados com a soma ou a subtração dos dois termos anteriores, ou seja:    </p>
 
-<p>    </p>
+<h1> Colocar imagem </h1>
 
-<p>    </p>
+<p> Elabore um algoritmo que imprima os N primeiros termos da série de Fetuccine.   </p>
 
-<p>    </p>
+<p>7 - Foi feita uma estatística em cinco cidades brasileiras para coletar dados sobre acidentes de trânsito. Foram obtidos os seguintes dados:   </p>
+<ul>
+  <li> Código da cidade.  </li>
+  <li> Número de veículos de passeio.  </li>
+  <li> Número de acidentes de trânsito com vítimas.  </li>
+</ul>
+<ol>
+  <li>Qual é o maior e o qual é o menor índice de acidentes de trânsito e a que cidade pertencem.</li>
+  <li>Qual é a média de veículos nas cinco cidades juntas.</li>
+  <li>Qual é a média de acidentes de trânsito nas cidades com menos de 2.000 veículos de passeio.</li>
+</ol>
+<p>Faça um algoritmo que determine os dados acima.</p>
 
 <p>    </p>
 
