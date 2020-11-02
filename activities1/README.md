@@ -13,7 +13,7 @@
   <li> Para crianças e adolescentes abaixo de 12 anos a dosagem é calculada pelo peso corpóreo, conforme a tabela a seguir:</li>
 </ul>
 
-Colocar imagem
+![alt text](https://github.com/souza10v/flowgorithm/blob/main/activities1/images/31.jpg?raw=true)
 
 <p>4 - Faça um programa que receba o valor do salário mínimo, o número de horas trabalhadas por um funcionário, o número de dependentes desse funcionário e o número de horas extras trabalhadas por esse funcionário. Calcule e mostre o salário a receber do funcionário de acordo com as regras a seguir:    </p>
 
