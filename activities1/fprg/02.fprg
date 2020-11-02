@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-01 09:16:23 PM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTEwLTMxOzEyOjExOjU4IFBNOzQwNzU="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA5OjE2OjIzIFBNOzI7NDE4NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salary" type="Real" array="False" size=""/>
+            <declare name="bill1" type="Real" array="False" size=""/>
+            <declare name="bill2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o sal&#225;rio:&quot;" newline="True"/>
+            <input variable="salary"/>
+            <output expression="&quot;Insira a conta 1:&quot;" newline="True"/>
+            <input variable="bill1"/>
+            <output expression="&quot;Insira a conta 2:&quot;" newline="True"/>
+            <input variable="bill2"/>
+            <output expression="&quot;O sal&#225;rio restante &#233; de R$&quot; &amp; salary-(bill1*1.02+bill2*1.025)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

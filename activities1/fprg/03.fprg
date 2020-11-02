@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-01 09:17:41 PM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTEwLTMxOzEyOjE2OjQ0IFBNOzQwNzU="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA5OjE3OjQxIFBNOzI7NDE4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="weight" type="Real" array="False" size=""/>
+            <declare name="age" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o peso:&quot;" newline="True"/>
+            <input variable="weight"/>
+            <output expression="&quot;Insira a idade:&quot;" newline="True"/>
+            <input variable="age"/>
+            <if expression="age &gt;= 12">
+                <then>
+                    <if expression="weight &gt;=60">
+                        <then>
+                            <output expression="&quot;Dever&#225; ser tomado &quot; &amp; 1000/25 &amp; &quot; gotas&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Dever&#225; ser tomado &quot; &amp; 875/25 &amp; &quot; gotas&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="weight&gt;=5 &amp;&amp; weight&lt;=9">
+                        <then>
+                            <output expression="&quot;Dever&#225; ser tomado &quot; &amp; 125/25 &amp; &quot; gotas&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="weight&gt;=9.1 &amp;&amp; weight&lt;=16">
+                        <then>
+                            <output expression="&quot;Dever&#225; ser tomado &quot; &amp; 250/25 &amp; &quot; gotas&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="weight&gt;=16.1 &amp;&amp; weight&lt;=24">
+                        <then>
+                            <output expression="&quot;Dever&#225; ser tomado &quot; &amp; 350/25 &amp; &quot; gotas&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="weight&gt;=24.1 &amp;&amp; weight&lt;=30">
+                        <then>
+                            <output expression="&quot;Dever&#225; ser tomado &quot; &amp; 500/25 &amp; &quot; gotas&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="weight&gt;30">
+                        <then>
+                            <output expression="&quot;Dever&#225; ser tomado &quot; &amp; 750/25 &amp; &quot; gotas&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

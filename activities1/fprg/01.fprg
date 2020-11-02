@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-01 09:14:45 PM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTEwLTMxOzExOjUxOjQ5IEFNOzQwNjM="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA5OjE0OjQ1IFBNOzU7NDE5MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="interest" type="Real" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o pre&#231;o: &quot;" newline="True"/>
+            <input variable="price"/>
+            <output expression="&quot;Insira a taxa de juros:&quot;" newline="True"/>
+            <input variable="interest"/>
+            <output expression="&quot;Novo pre&#231;o R$&quot; &amp; price*(1-(interest/100)) &amp; &quot; e desconto de R$&quot; &amp; price*interest/100" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

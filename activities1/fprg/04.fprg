@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Donizetti de Souza"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-01 09:19:41 PM"/>
+        <attribute name="created" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTEwLTMxOzEyOjM4OjEyIFBNOzQwNzQ="/>
+        <attribute name="edited" value="RG9uaXpldHRpIGRlIFNvdXphO0RFU0tUT1AtSTFQOVBBRDsyMDIwLTExLTAxOzA5OjE5OjQxIFBNOzU7NDE5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mwage" type="Real" array="False" size=""/>
+            <declare name="whours" type="Real" array="False" size=""/>
+            <declare name="npeople" type="Integer" array="False" size=""/>
+            <declare name="xhours" type="Integer" array="False" size=""/>
+            <declare name="wgtotal" type="Real" array="False" size=""/>
+            <declare name="wgliquid" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o sal&#225;rio:&quot;" newline="True"/>
+            <input variable="mwage"/>
+            <output expression="&quot;Insira o n&#250;mero de horas trabalhadas:&quot;" newline="True"/>
+            <input variable="whours"/>
+            <output expression="&quot;Insira o n&#250;mero de dependentes:&quot;" newline="True"/>
+            <input variable="npeople"/>
+            <output expression="&quot;Insira o n&#250;mero de horas extras:&quot;" newline="True"/>
+            <input variable="xhours"/>
+            <assign variable="wgtotal" expression="(mwage*0.05)*whours+npeople*32+(1.5*mwage*0.05*xhours)"/>
+            <if expression="wgtotal&lt;200">
+                <then>
+                    <assign variable="wgliquid" expression="wgtotal"/>
+                </then>
+                <else>
+                    <if expression="wgtotal&gt;=200 &amp;&amp; wgtotal&lt;=500">
+                        <then>
+                            <assign variable="wgliquid" expression="wgtotal*0.9"/>
+                        </then>
+                        <else>
+                            <assign variable="wgliquid" expression="wgtotal*0.8"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="wgliquid&lt;=350">
+                <then>
+                    <output expression="&quot;Sal&#225;rio recebido de R$&quot; &amp; wgliquid+100" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sal&#225;rio recebido de R$&quot; &amp; wgliquid+50" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
