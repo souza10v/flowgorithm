@@ -24,14 +24,14 @@
   <li> Para cada hora extra trabalhada, calcular o valor da hora trabalhada acrescida de 50%. </li>
   <li> O salário bruto é igual ao salário do mês mais o valor dos dependentes, mais o valor das horas extras.</li>
   <li> Calcular o valor do imposto de renda retido na fonte de acordo com a tabela abaixo: </li>
-  
+</ul> 
 ![alt text](https://github.com/souza10v/flowgorithm/blob/main/activities1/images/41.jpg?raw=true)
-
+<ul>
   <li> O salário líquido é igual ao salário bruto menos o IRRF. </li>
   <li> A gratificação salarial é feita de acordo com a tabela a seguir:</li>
-  
+</ul>  
 ![alt text](https://github.com/souza10v/flowgorithm/blob/main/activities1/images/42.jpg?raw=true)
-
+<ul>
   <li>O salário a receber do funcionário será igual ao salário líquido mais a gratificação.  </li>
 </ul>
   
