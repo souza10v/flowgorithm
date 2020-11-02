@@ -65,9 +65,7 @@
 
 <p>11 - Suponha que a população de uma cidade A seja da ordem de 80.000 habitantes com uma taxa anual de crescimento de 3% e que a população de uma cidade B seja 200.000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população da cidade A ultrapasse ou iguale a população da cidade B, mantidas as taxas de crescimento.    </p>
 
-<p>12 -
-  
-  Crie um algoritmo que leia um conjunto de informações (nome, sexo, idade, peso e altura) dos atletas que participaram de uma olimpíada, e informar:    </p>
+<p>12 - Crie um algoritmo que leia um conjunto de informações (nome, sexo, idade, peso e altura) dos atletas que participaram de uma olimpíada, e informar:    </p>
 <ol> 
   <li>O atleta do sexo masculino mais alto.</li>
   <li>A atleta do sexo feminino mais pesada.</li>
