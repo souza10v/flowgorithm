@@ -1,6 +1,6 @@
 <h1>Atividades 1 </h1>
 
-<p> Os arquivos no formato pdf podem ser encontrados no diretório pdf onde encontram-se enumerados conforme o número da atividade. </p>
+<p> As resoluções podem ser encontradas nos diretório pdf e fprg onde estão enumeradas conforme o número da atividade. </p>
 
 <p>1 - Em épocas de pouco dinheiro, os comerciantes estão procurando aumentar suas vendas oferecendo desconto. Faça um algoritmo que possa entrar com o valor de um produto e o desconto oferecido (em percentual) e imprima o novo valor a ser pago. Além disso, imprima o valor do desconto.</p>
 
