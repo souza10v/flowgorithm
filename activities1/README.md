@@ -38,13 +38,11 @@
 
 <p>5 - Criar um algoritmo que imprima todos os números de 1 até 100, inclusive, e a média aritmética de todos eles.    </p>
 
-<p>6 - A série de Fetuccine é gerada da seguinte forma: os dois primeiros termos são fornecidos pelo usuário; a partir daí, os termos são gerados com a soma ou a subtração dos dois termos anteriores, ou seja:    </p>
+<p>6 - Elabore um algoritmo que imprima os N primeiros termos da série de Fetuccine. A série de Fetuccine é gerada da seguinte forma: os dois primeiros termos são fornecidos pelo usuário; a partir daí, os termos são gerados com a soma ou a subtração dos dois termos anteriores, ou seja:    </p>
 
-<h1> Colocar imagem </h1>
+![alt text](https://github.com/souza10v/flowgorithm/blob/main/activities1/images/61.jpg?raw=true)
 
-<p> Elabore um algoritmo que imprima os N primeiros termos da série de Fetuccine.   </p>
-
-<p>7 - Foi feita uma estatística em cinco cidades brasileiras para coletar dados sobre acidentes de trânsito. Foram obtidos os seguintes dados:   </p>
+<p>7 - Faça um algoritmo que determine os dados abaixo. Foi feita uma estatística em cinco cidades brasileiras para coletar dados sobre acidentes de trânsito. Foram obtidos os seguintes dados:   </p>
 <ul>
   <li> Código da cidade.  </li>
   <li> Número de veículos de passeio.  </li>
@@ -55,12 +53,23 @@
   <li>Qual é a média de veículos nas cinco cidades juntas.</li>
   <li>Qual é a média de acidentes de trânsito nas cidades com menos de 2.000 veículos de passeio.</li>
 </ol>
-<p>Faça um algoritmo que determine os dados acima.</p>
 
-<p>    </p>
 
-<p>    </p>
+<p>8 - Elabore um algoritmo que calcule o MMC (mínimo múltiplo comum) entre dois números lidos.    </p>
 
-<p>    </p>
+<p>9 - Elabore um algoritmo que leia o número de termos da série abaixo e imprima o valor de H, sendo:    </p>
 
-<p>    </p>
+![alt text](https://github.com/souza10v/flowgorithm/blob/main/activities1/images/91.jpg?raw=true)
+
+<p>10 - Um número é, por definição, primo se ele não tem divisores, exceto 1 e ele próprio. Escreva um programa em fluxograma que leia um número e determine se ele é ou não primo.    </p>
+
+<p>11 - Suponha que a população de uma cidade A seja da ordem de 80.000 habitantes com uma taxa anual de crescimento de 3% e que a população de uma cidade B seja 200.000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população da cidade A ultrapasse ou iguale a população da cidade B, mantidas as taxas de crescimento.    </p>
+
+<p>12 - Crie um algoritmo que leia um conjunto de informações (nome, sexo, idade, peso e altura) dos atletas que participaram de uma olimpíada, e informar:    </p>
+<ol> 
+  <li>O atleta do sexo masculino mais alto</li>
+  <li>A atleta do sexo feminino mais pesada</li>
+  <li>A média de idade dos atletas</li>
+</ol>
+
+<p> Deverão ser lidos dados dos atletas até que seja digitado o nome @ para um atleta.   </p>
